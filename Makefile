@@ -16,6 +16,4 @@ prod_release:
 	@sudo rebar3 as prod release
 
 clean:
-	@echo "===> remove the _build directory"
-	@rm -rf _build
-	@rebar3 clean
+	@rebar3 clean --all

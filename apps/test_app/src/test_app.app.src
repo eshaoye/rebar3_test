@@ -1,0 +1,18 @@
+{application, test_app,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { test_app_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    eper,
+    sync
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.

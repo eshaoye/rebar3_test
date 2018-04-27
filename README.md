@@ -6,13 +6,12 @@ rebar3的学习例子，包含eper工程和sync工程。
 release：
     make release
 
-运行：
+运行程序：
    cd _build/default/rel/test_app/bin
    ./test_app console
 
-运行sync：
-    sync:go().  ## 会自动编译修改的文件并load到erlang shell中。
-
+运行common_test：
+    rebar3 ct
 
 plugins:
 1) 'rebar3 run' will start the release console, instead of having to 

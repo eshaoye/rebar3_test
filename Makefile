@@ -1,20 +1,21 @@
+Rebar = ./rebar3
 
 all:
 	@test -d _build/default/lib || rebar3 get-deps
-	@rebar3 compile
+	@$(Rebar) compile
 
 release:
 	@test -d _build/default/lib || rebar3 get-deps
-	@rebar3 release
+	@$(Rebar) release
 
 dev_release:
-	@rebar3 as dev release
+	@$(Rebar) as dev release
 	
 prod_release:
-	@sudo rebar3 as prod release
+	@sudo  $(Rebar) as prod release
 
 tar:
-	@rebar3 tar
+	@$Rebar tar
 
 clean:
-	@rebar3 clean --all
+	@$(Rebar) clean --all

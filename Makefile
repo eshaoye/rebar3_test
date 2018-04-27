@@ -9,6 +9,12 @@ release:
 
 rel: release
 
+dev_release:
+	@rebar3 as dev release
+	
+prod_release:
+	@sudo rebar3 as prod release
+
 clean:
 	@echo "===> remove the _build directory"
 	@rm -rf _build

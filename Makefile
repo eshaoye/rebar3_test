@@ -11,7 +11,7 @@ dev_release:
 	@./rebar3 as dev release
 	
 prod_release:
-	@sudo  ./rebar3 as prod release
+	@./rebar3 as prod release
 
 tar:
 	@./rebar3 tar
